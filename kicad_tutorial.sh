@@ -41,9 +41,13 @@ BookmarkTitle: KiCad: schematic organisation and hierarchical sheets
 BookmarkLevel: 1
 BookmarkPageNumber: 32
 BookmarkBegin
-BookmarkTitle: KiCad: mechanical accuracy and silkscreen features 
+BookmarkTitle: KiCad, mechanical accuracy, and silkscreen features 
 BookmarkLevel: 1
 BookmarkPageNumber: 38
+BookmarkBegin
+BookmarkTitle: KiCad, different PCB substrates 
+BookmarkLevel: 1
+BookmarkPageNumber: 44
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
@@ -56,7 +60,8 @@ pdftk \
 	E=issues/HS70-DIGITAL.pdf \
 	F=issues/HS71_DIGITAL.pdf \
 	G=issues/HS73DIGITAL.pdf \
-	cat LIC1 A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 \
+	H=issues/HS74DIGITAL.pdf \
+	cat LIC1 A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 \
 	output - | \
 	pdftk - update_info bookmarks.txt output kicad_tutorial.pdf
 
