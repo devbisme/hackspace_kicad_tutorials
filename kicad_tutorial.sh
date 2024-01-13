@@ -3,7 +3,8 @@ set -euo pipefail
 
 # Create license page.
 pandoc -f markdown -t pdf << EOLICENSE > license.pdf
-These articles from [HackSpace magazine](https://hackspace.raspberrypi.com/)
+These articles from [HackSpace magazine](https://hackspace.raspberrypi.com/) and
+[The MagPi Magazine](https://magpi.raspberrypi.com/)
 along with this compilation
 are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
 
@@ -48,6 +49,10 @@ BookmarkBegin
 BookmarkTitle: KiCad, different PCB substrates 
 BookmarkLevel: 1
 BookmarkPageNumber: 44
+BookmarkBegin
+BookmarkTitle: KiCad, different PCB substrates 
+BookmarkLevel: 1
+BookmarkPageNumber: 49
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
@@ -61,7 +66,8 @@ pdftk \
 	F=issues/HS71_DIGITAL.pdf \
 	G=issues/HS73DIGITAL.pdf \
 	H=issues/HS74DIGITAL.pdf \
-	cat LIC1 A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 \
+	I=issues/MagPi137.pdf \
+	cat LIC1 A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 I60-64\
 	output - | \
 	pdftk - update_info bookmarks.txt output kicad_tutorial.pdf
 
