@@ -50,9 +50,9 @@ BookmarkTitle: KiCad, different PCB substrates
 BookmarkLevel: 1
 BookmarkPageNumber: 44
 BookmarkBegin
-BookmarkTitle: KiCad, different PCB substrates 
+BookmarkTitle: Design a circuit with KiCad 
 BookmarkLevel: 1
-BookmarkPageNumber: 49
+BookmarkPageNumber: 50
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
