@@ -1,6 +1,7 @@
 # hackspace_kicad_tutorials
 
-This is a compilation of KiCad tutorials originally published by [HackSpace magazine](https://hackspace.raspberrypi.com/).
+This is a compilation of KiCad tutorials originally published by [HackSpace magazine](https://hackspace.raspberrypi.com/)
+and [The MagPi Magazine](https://magpi.raspberrypi.com/).
 
 When new tutorials are published, they can be added as follows:
 

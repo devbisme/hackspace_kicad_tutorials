@@ -62,13 +62,21 @@ BookmarkTitle: KiCad, different PCB substrates
 BookmarkLevel: 2
 BookmarkPageNumber: 45
 BookmarkBegin
+BookmarkTitle: Exploring PCB services 
+BookmarkLevel: 2
+BookmarkPageNumber: 51
+BookmarkBegin
 BookmarkTitle: MagPi Tutorials
 BookmarkLevel: 1
-BookmarkPageNumber: 51
+BookmarkPageNumber: 57
 BookmarkBegin
 BookmarkTitle: Design a circuit with KiCad 
 BookmarkLevel: 2
-BookmarkPageNumber: 52
+BookmarkPageNumber: 58
+BookmarkBegin
+BookmarkTitle: Create your own PCB 
+BookmarkLevel: 2
+BookmarkPageNumber: 63
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
@@ -83,9 +91,11 @@ pdftk \
 	F=issues/HS71_DIGITAL.pdf \
 	G=issues/HS73DIGITAL.pdf \
 	H=issues/HS74DIGITAL.pdf \
+	I=issues/HS75_DIGITAL.pdf \
 	MP=magpi_title.pdf \
-	I=issues/MagPi137.pdf \
-	cat LIC1 HS A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 MP I60-64\
+	J=issues/MagPi137.pdf \
+	K=issues/MagPi138_Digital.pdf \
+	cat LIC1 HS A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 I74-79 MP J60-64 K44-50\
 	output - | \
 	pdftk - update_info bookmarks.txt output kicad_tutorial.pdf
 
