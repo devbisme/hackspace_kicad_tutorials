@@ -8,7 +8,7 @@ These articles from [HackSpace magazine](https://hackspace.raspberrypi.com/) and
 along with this compilation
 are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
 
-![CC-BY-NC-SA 3.0](https://pressbooks.bccampus.ca/posetest/wp-content/uploads/sites/1367/2021/04/by-nc-sa.png)
+![CC-BY-NC-SA 3.0](CC_BY-SA_3.0.png)
 EO_LICENSE
 
 pandoc -f markdown -t pdf << EO_HACKSPACE_TITLE > hackspace_title.pdf
@@ -66,36 +66,41 @@ BookmarkTitle: Exploring PCB services
 BookmarkLevel: 2
 BookmarkPageNumber: 51
 BookmarkBegin
+BookmarkTitle: KiCad: making a smart stepper motor 
+BookmarkLevel: 2
+BookmarkPageNumber: 57
+BookmarkBegin
 BookmarkTitle: MagPi Tutorials
 BookmarkLevel: 1
-BookmarkPageNumber: 57
+BookmarkPageNumber: 63
 BookmarkBegin
 BookmarkTitle: Design a circuit with KiCad 
 BookmarkLevel: 2
-BookmarkPageNumber: 58
+BookmarkPageNumber: 64
 BookmarkBegin
 BookmarkTitle: Create your own PCB 
 BookmarkLevel: 2
-BookmarkPageNumber: 63
+BookmarkPageNumber: 69
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
 pdftk \
 	LIC=license.pdf \
 	HS=hackspace_title.pdf \
-	A=issues/HS_66_Digital.pdf \
-	B=issues/HS_67_DIGITAL.pdf \
-	C=issues/HS68_DIGITAL.pdf \
-	D=issues/HS_69_DIGITAL.pdf \
-	E=issues/HS70-DIGITAL.pdf \
-	F=issues/HS71_DIGITAL.pdf \
-	G=issues/HS73DIGITAL.pdf \
-	H=issues/HS74DIGITAL.pdf \
-	I=issues/HS75_DIGITAL.pdf \
+	AA=issues/HS_66_Digital.pdf \
+	AB=issues/HS_67_DIGITAL.pdf \
+	AC=issues/HS68_DIGITAL.pdf \
+	AD=issues/HS_69_DIGITAL.pdf \
+	AE=issues/HS70-DIGITAL.pdf \
+	AF=issues/HS71_DIGITAL.pdf \
+	AG=issues/HS73DIGITAL.pdf \
+	AH=issues/HS74DIGITAL.pdf \
+	AI=issues/HS75_DIGITAL.pdf \
+	AJ=issues/HackSpace76.pdf \
 	MP=magpi_title.pdf \
-	J=issues/MagPi137.pdf \
-	K=issues/MagPi138_Digital.pdf \
-	cat LIC1 HS A54-59 B54-59 C52-57 D50-55 E52-57 F48-53 G78-83 H60-65 I74-79 MP J60-64 K44-50\
+	BA=issues/MagPi137.pdf \
+	BB=issues/MagPi138_Digital.pdf \
+	cat LIC1 HS AA54-59 AB54-59 AC52-57 AD50-55 AE52-57 AF48-53 AG78-83 AH60-65 AI74-79 AJ56-61 MP BA60-64 BB44-50\
 	output - | \
 	pdftk - update_info bookmarks.txt output kicad_tutorial.pdf
 
