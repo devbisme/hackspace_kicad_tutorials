@@ -74,17 +74,21 @@ BookmarkTitle: KiCad: making an RP2040 game controller
 BookmarkLevel: 2
 BookmarkPageNumber: 63
 BookmarkBegin
+BookmarkTitle: KiCad: making an RP2040 temperature sensor
+BookmarkLevel: 2
+BookmarkPageNumber: 68
+BookmarkBegin
 BookmarkTitle: MagPi Tutorials
 BookmarkLevel: 1
-BookmarkPageNumber: 68
+BookmarkPageNumber: 73
 BookmarkBegin
 BookmarkTitle: Design a circuit with KiCad 
 BookmarkLevel: 2
-BookmarkPageNumber: 69
+BookmarkPageNumber: 74
 BookmarkBegin
 BookmarkTitle: Create your own PCB 
 BookmarkLevel: 2
-BookmarkPageNumber: 74
+BookmarkPageNumber: 79
 EOBOOKMARKS
 
 # Compile license and tutorials and then add bookmarks.
@@ -102,10 +106,11 @@ pdftk \
 	AI=issues/HS75_DIGITAL.pdf \
 	AJ=issues/HackSpace76.pdf \
 	AK=issues/HS_77.pdf \
+	AL="issues/HackSpace 78.pdf" \
 	MP=magpi_title.pdf \
 	BA=issues/MagPi137.pdf \
 	BB=issues/MagPi138_Digital.pdf \
-	cat LIC1 HS AA54-59 AB54-59 AC52-57 AD50-55 AE52-57 AF48-53 AG78-83 AH60-65 AI74-79 AJ56-61 AK48-52 MP BA60-64 BB44-50\
+	cat LIC1 HS AA54-59 AB54-59 AC52-57 AD50-55 AE52-57 AF48-53 AG78-83 AH60-65 AI74-79 AJ56-61 AK48-52 AL54-58 MP BA60-64 BB44-50\
 	output - | \
 	pdftk - update_info bookmarks.txt output kicad_tutorial.pdf
 
